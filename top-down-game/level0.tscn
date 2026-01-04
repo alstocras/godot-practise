@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmu3jfrao67av"]
+
+[ext_resource type="PackedScene" uid="uid://cu0j6kxkgivai" path="res://player.tscn" id="1_7irja"]
+[ext_resource type="PackedScene" uid="uid://df7yk6c60cd2b" path="res://wall.tscn" id="2_vhh4d"]
+
+[node name="Level0" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_7irja")]
+position = Vector2(523, 237)
+
+[node name="Wall" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 269)
+polarity = 1
+
+[node name="Wall6" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 205)
+polarity = 1
+
+[node name="Wall2" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(555, 237)
+polarity = 1
+
+[node name="Wall4" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 141)
+polarity = 1
+
+[node name="Wall3" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(555, 269)
+polarity = 1
+
+[node name="Wall8" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 173)
+polarity = 1
+
+[node name="Wall7" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(523, 269)
+polarity = -1
+
+[node name="Wall5" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 237)
+polarity = 1
