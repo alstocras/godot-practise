@@ -1,0 +1,99 @@
+[gd_scene load_steps=5 format=3 uid="uid://bv1hn4t0mu7p6"]
+
+[ext_resource type="PackedScene" uid="uid://cu0j6kxkgivai" path="res://player.tscn" id="1_ootpb"]
+[ext_resource type="PackedScene" uid="uid://df7yk6c60cd2b" path="res://wall.tscn" id="2_v38iq"]
+[ext_resource type="PackedScene" uid="uid://dvqtt1hqnhx3q" path="res://goal.tscn" id="3_v8kj3"]
+[ext_resource type="FontFile" uid="uid://btpmm8kg8ofi7" path="res://fonts/font.ttf" id="4_v38iq"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ootpb")]
+position = Vector2(383, 601)
+
+[node name="Wall" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(383, 633)
+polarity = -1
+
+[node name="Wall2" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(415, 633)
+polarity = -1
+
+[node name="Wall3" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(415, 601)
+polarity = -1
+
+[node name="Wall4" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(415, 569)
+
+[node name="Wall5" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(415, 537)
+
+[node name="Wall6" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(447, 537)
+
+[node name="Wall7" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(479, 537)
+polarity = -1
+
+[node name="Wall8" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(511, 537)
+polarity = -1
+
+[node name="Wall9" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(511, 505)
+polarity = -1
+
+[node name="Wall10" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(511, 473)
+polarity = -1
+
+[node name="Wall11" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(479, 473)
+polarity = -1
+
+[node name="Wall12" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(447, 473)
+
+[node name="Wall13" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(415, 473)
+
+[node name="Wall14" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(383, 473)
+polarity = 1
+
+[node name="Wall15" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(351, 473)
+polarity = 1
+
+[node name="Wall16" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(351, 505)
+polarity = 1
+
+[node name="Wall17" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(351, 537)
+
+[node name="Wall18" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(351, 569)
+
+[node name="Wall19" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(351, 601)
+polarity = -1
+
+[node name="Wall20" parent="." instance=ExtResource("2_v38iq")]
+position = Vector2(351, 633)
+polarity = -1
+
+[node name="Goal" parent="." instance=ExtResource("3_v8kj3")]
+position = Vector2(479, 505)
+next_scene = "2"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 440.0
+offset_top = 568.0
+offset_right = 601.0
+offset_bottom = 627.0
+theme_override_fonts/font = ExtResource("4_v38iq")
+theme_override_font_sizes/font_size = 14
+text = "Like charges repel.
+Unlike charges attract.
+Flip your polarity to manoeuvre."

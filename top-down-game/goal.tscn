@@ -1,14 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://dvqtt1hqnhx3q"]
+[gd_scene load_steps=4 format=3 uid="uid://dvqtt1hqnhx3q"]
 
+[ext_resource type="Script" uid="uid://de1nwnr37e0qq" path="res://goal.gd" id="1_0qle8"]
 [ext_resource type="Texture2D" uid="uid://77pmykgmjtl3" path="res://sprites/environment/special/finish.png" id="1_6k3qi"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_0qle8"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_6k3qi"]
 radius = 16.0
 
-[node name="Goal" type="CharacterBody2D"]
+[node name="Goal" type="Area2D"]
+script = ExtResource("1_0qle8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_0qle8")
+shape = SubResource("CircleShape2D_6k3qi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_6k3qi")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

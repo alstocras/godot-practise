@@ -1,41 +1,75 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmu3jfrao67av"]
+[gd_scene load_steps=5 format=3 uid="uid://cmu3jfrao67av"]
 
 [ext_resource type="PackedScene" uid="uid://cu0j6kxkgivai" path="res://player.tscn" id="1_7irja"]
 [ext_resource type="PackedScene" uid="uid://df7yk6c60cd2b" path="res://wall.tscn" id="2_vhh4d"]
+[ext_resource type="PackedScene" uid="uid://dvqtt1hqnhx3q" path="res://goal.tscn" id="3_vhh4d"]
+[ext_resource type="FontFile" uid="uid://btpmm8kg8ofi7" path="res://fonts/font.ttf" id="4_tgtrw"]
 
 [node name="Level0" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_7irja")]
-position = Vector2(523, 237)
+position = Vector2(523, 238)
 
 [node name="Wall" parent="." instance=ExtResource("2_vhh4d")]
-position = Vector2(491, 269)
-polarity = 1
+position = Vector2(491, 270)
+polarity = -1
 
 [node name="Wall6" parent="." instance=ExtResource("2_vhh4d")]
-position = Vector2(491, 205)
+position = Vector2(523, 110)
 polarity = 1
 
 [node name="Wall2" parent="." instance=ExtResource("2_vhh4d")]
-position = Vector2(555, 237)
-polarity = 1
-
-[node name="Wall4" parent="." instance=ExtResource("2_vhh4d")]
-position = Vector2(491, 141)
-polarity = 1
+position = Vector2(555, 238)
+polarity = -1
 
 [node name="Wall3" parent="." instance=ExtResource("2_vhh4d")]
-position = Vector2(555, 269)
-polarity = 1
-
-[node name="Wall8" parent="." instance=ExtResource("2_vhh4d")]
-position = Vector2(491, 173)
-polarity = 1
+position = Vector2(555, 270)
+polarity = -1
 
 [node name="Wall7" parent="." instance=ExtResource("2_vhh4d")]
-position = Vector2(523, 269)
+position = Vector2(523, 270)
 polarity = -1
 
 [node name="Wall5" parent="." instance=ExtResource("2_vhh4d")]
-position = Vector2(491, 237)
+position = Vector2(491, 238)
+polarity = -1
+
+[node name="Wall4" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 110)
 polarity = 1
+
+[node name="Wall9" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(555, 142)
+polarity = 1
+
+[node name="Wall10" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(555, 110)
+polarity = 1
+
+[node name="Wall11" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 174)
+
+[node name="Wall13" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 206)
+
+[node name="Wall14" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(555, 174)
+
+[node name="Wall15" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(555, 206)
+
+[node name="Wall12" parent="." instance=ExtResource("2_vhh4d")]
+position = Vector2(491, 142)
+polarity = 1
+
+[node name="Goal" parent="." instance=ExtResource("3_vhh4d")]
+position = Vector2(523, 142)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 584.0
+offset_top = 181.0
+offset_right = 894.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("4_tgtrw")
+text = "Right-click to change polarity
+Move to the yellow circle"

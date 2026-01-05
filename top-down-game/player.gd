@@ -14,6 +14,9 @@ var temp_direction_vector: Vector2
 
 var target_zoom := Vector2(1, 1)
 
+func _ready() -> void:
+	add_to_group("players")
+
 func _physics_process(delta: float) -> void:
 	force_vector = Vector2.ZERO
 	if Input.is_action_just_pressed("flip_player_polarity"):
