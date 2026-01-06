@@ -1,0 +1,82 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbb8hbap2jf2t"]
+
+[ext_resource type="PackedScene" uid="uid://cu0j6kxkgivai" path="res://player.tscn" id="1_6q4t8"]
+[ext_resource type="PackedScene" uid="uid://df7yk6c60cd2b" path="res://wall.tscn" id="2_8tcn8"]
+[ext_resource type="PackedScene" uid="uid://dvqtt1hqnhx3q" path="res://goal.tscn" id="3_r6vdu"]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_6q4t8")]
+position = Vector2(6127, 7806)
+
+[node name="Wall" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6127, 7838)
+polarity = -1
+
+[node name="Wall6" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6191, 7902)
+polarity = 1
+
+[node name="Wall7" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6223, 7902)
+
+[node name="Wall8" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6255, 7902)
+
+[node name="Wall9" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6255, 7870)
+
+[node name="Wall10" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6255, 7838)
+
+[node name="Wall11" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6255, 7838)
+
+[node name="Wall12" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6255, 7806)
+
+[node name="Wall13" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6255, 7774)
+
+[node name="Wall14" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6255, 7742)
+
+[node name="Wall15" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6223, 7742)
+
+[node name="Wall16" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6191, 7742)
+
+[node name="Wall17" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6159, 7742)
+
+[node name="Wall18" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6127, 7742)
+
+[node name="Wall19" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6095, 7742)
+
+[node name="Wall20" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6095, 7774)
+
+[node name="Wall21" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6095, 7806)
+
+[node name="Wall22" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6095, 7838)
+
+[node name="Wall2" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6159, 7838)
+polarity = -1
+
+[node name="Wall3" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6159, 7870)
+polarity = 1
+
+[node name="Wall4" parent="." instance=ExtResource("2_8tcn8")]
+position = Vector2(6159, 7902)
+polarity = 1
+
+[node name="Goal" parent="." instance=ExtResource("3_r6vdu")]
+position = Vector2(6191, 7870)
+next_scene = "3"
