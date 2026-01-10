@@ -1,7 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://c826ax584xcew"]
+[gd_scene load_steps=3 format=3 uid="uid://c826ax584xcew"]
 
-[ext_resource type="AudioStream" uid="uid://br05yosdaia0r" path="res://music/gameplay.ogg" id="1_o7k1f"]
+[ext_resource type="AudioStream" uid="uid://b8tase43d2hq2" path="res://music/menu.ogg" id="1_o7k1f"]
+[ext_resource type="Script" uid="uid://bhltrgmdeumvs" path="res://music_controller.gd" id="2_7bf0p"]
 
 [node name="MusicController" type="AudioStreamPlayer"]
 stream = ExtResource("1_o7k1f")
 autoplay = true
+script = ExtResource("2_7bf0p")

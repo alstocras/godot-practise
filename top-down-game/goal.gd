@@ -10,6 +10,8 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("players"):
+		$AudioStreamPlayer.play()
+		await get_tree().create_timer(0.75).timeout
 		formatted_next_scene = "res://level" + next_scene + ".tscn"
 		print("Switching to scene" + formatted_next_scene)
 		get_tree().call_deferred("change_scene_to_file", formatted_next_scene) # Replace with function body.

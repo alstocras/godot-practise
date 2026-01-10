@@ -22,6 +22,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("flip_player_polarity"):
 		polarity *= -1
 		sprite_update()
+		$AudioStreamPlayer.play()
 	for wall in get_tree().get_nodes_in_group("walls"):
 		if wall.polarity != 0:
 			temp_direction_vector = (global_position - wall.position).normalized()
